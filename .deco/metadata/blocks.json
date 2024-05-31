@@ -44,5 +44,11 @@
   "/.deco/blocks/deco-htmx.json": {
     "blockType": "apps",
     "__resolveType": "site/apps/deco/htmx.ts"
+  },
+  "/.deco/blocks/pages-Initial%2520menu-709395.json": {
+    "name": "Initial menu",
+    "path": "/home",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
