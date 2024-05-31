@@ -199,14 +199,21 @@ function Home() {
       <nav class="fixed top-0 left-0 w-full bg-[#02f67c] p-4 shadow-md z-10">
         <div class="max-w-screen-xl mx-auto flex justify-between items-center">
           <h1 class="text-2xl font-bold">Decograd</h1>
-          <div>
+          <div class="lg:hidden">
+            <button class="text-white focus:outline-none" id="menu-button">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex">
             <a href="#semesters" class="text-white hover:text-gray-900 transition-colors">Semestres</a>
           </div>
         </div>
       </nav>
       <div class="max-w-screen-xl mx-auto flex flex-col items-center mt-16">
         <h1 class="text-4xl font-bold mb-8 text-[#02f67c]">Ciência da Computação - Graduação</h1>
-        <div id="semesters" class="w-full grid grid-cols-9 gap-4">
+        <div id="semesters" class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-9 gap-4">
           {semesters.map((semester, index) => (
             <div key={index} class="flex flex-col items-center">
               <h2 class="text-xl font-bold mb-4 text-center text-[#02f67c]">{index + 1}</h2>
