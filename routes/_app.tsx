@@ -119,7 +119,6 @@ const semesters = [
     ],
   },
 ];
-
 // Componente que renderiza as informações detalhadas de um curso
 const CourseInfo = ({ course }: { course: Course }) => (
   <div class="mt-4 p-4 bg-gray-800 text-white rounded-lg">
@@ -213,7 +212,7 @@ function Home() {
       </nav>
       <div class="max-w-screen-xl mx-auto flex flex-col items-center mt-16">
         <h1 class="text-4xl font-bold mb-8 text-[#02f67c]">Ciência da Computação - Graduação</h1>
-        <div id="semesters" class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-9 gap-4">
+        <div id="semesters" class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-9 gap-4">
           {semesters.map((semester, index) => (
             <div key={index} class="flex flex-col items-center">
               <h2 class="text-xl font-bold mb-4 text-center text-[#02f67c]">{index + 1}</h2>
