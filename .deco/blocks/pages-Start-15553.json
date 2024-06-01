@@ -4,6 +4,9 @@
   "sections": [
     {
       "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "Preview /sections/decograd.tsx"
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
